@@ -1,0 +1,51 @@
+Rough Brainstorm Notes – 29 Aug 2025
+Par-3 Course, Crans-Montana, CH
+Project: “Swiss-Card Golf Cloud” – live scoring & pace-of-play app for 9-hole par-3 loop.
+Attendees (as scribbled on top of page)
+• Oli “O” – Club Owner / GM
+• Dev “D” – Lead PM, AlpineCode GmbH (us)
+• Leo “L” – Head Pro / Tournament Director
+O: Goal in one line
+“Turn every guest’s phone into a walking scoreboard and a silent ranger.”
+L: Non-negotiables
+Par-3 only → max 150 m between tees & greens → GPS accuracy ±3 m acceptable.
+9 holes loop twice for 18 → app must let players switch to “Loop 2” mid-round.
+Snow-Season simulators downstairs → scores must sync to indoor bays so we keep handicaps alive in winter.
+D: Tech Skeleton (white-board sketch)
+React-Native shell → iOS & Android same code base.
+Offline-first SQLite store → auto-sync when back in 4G.
+Azure Functions back-end (EU West) for GDPR.
+QR code on each tee box → scan to auto-load hole, yardage, pin position.
+O: Monetize
+CHF 4.50 per player “digital caddie fee” bundled into green-fee.
+Upsell: “Pro Tips” pack – 30-sec Leo video per hole, CHF 2.00.
+Sponsor splash: local watch brand on scorecard background.
+L: Gamification hooks
+Daily Closest-to-Pin league → optical prism in flagstick measures w/ phone camera?
+“Beat the Pro” – Leo sets a net par target; beat him and clubhouse buys you a Rivella.
+Kids “Birdie Streak” badge system → pushes junior program sign-ups.
+D: Edge Cases
+Battery drain at altitude → dark-mode + low-GPS polling until user opens app.
+Swiss data law → no location stored > 24 h unless user opts in.
+Language: FR / DE / EN auto-detect from phone locale.
+O: Staff side
+Marshal iPad dashboard → live heat-map of groups & elapsed time.
+Red-flag push if group > 14 min on any hole.
+End-of-day CSV export to IG SHMS (Swiss handicap engine).
+L: Content pipeline
+Film vertical videos in April before season opens.
+Auto-translate subtitles via Azure Cognitive; Leo approves wording.
+D: MVP Timeline
+Week 0–2: map course, QR plaques, Azure spin-up.
+Week 3–5: alpha w/ staff only.
+Week 6: soft-launch with Tuesday senior group (30 players).
+Week 8: public release before Swiss National Day tournament.
+O: Risk / Kill Criteria
+If < 70 % usage after 1 month → drop digital fee, pivot to free w/ ads.
+If GPS variance > 6 m on holes 3 & 7 → manual pin collection fallback.
+Random Post-its
+“Snow mode” toggle – changes green speed to “mat” and slope to 0.
+Share scorecard as vertical Instagram story template.
+Apple Watch glance? (D: stretch goal.)
+Emergency button → sends location to marshal w/ one tap (altitude sickness).
+End-of-session doodle: Swiss flag icon morphing into a cloud that rains tiny golf balls.
