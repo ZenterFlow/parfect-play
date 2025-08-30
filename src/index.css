@@ -2,41 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Swiss Golf Cloud Design System - Premium Alpine Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    /* Alpine Nature Palette */
+    --background: 120 20% 98%;
+    --foreground: 158 25% 15%;
+    
+    /* Card and Surface Colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 158 25% 15%;
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 158 25% 15%;
+    
+    /* Golf Course Greens */
+    --primary: 140 35% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 140 40% 20%;
+    
+    /* Fairway Colors */
+    --secondary: 130 25% 90%;
+    --secondary-foreground: 158 25% 15%;
+    
+    /* Muted Earth Tones */
+    --muted: 35 15% 92%;
+    --muted-foreground: 158 15% 45%;
+    
+    /* Accent Pin Colors */
+    --accent: 45 95% 85%;
+    --accent-foreground: 158 25% 15%;
+    
+    /* Alert Colors */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+    --warning: 35 85% 65%;
+    --warning-foreground: 158 25% 15%;
+    
+    /* Success Green */
+    --success: 140 60% 50%;
+    --success-foreground: 0 0% 98%;
+    
+    /* Borders and Inputs */
+    --border: 140 15% 85%;
+    --input: 140 15% 85%;
+    --ring: 140 35% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+    
+    /* Golf-specific colors */
+    --tee: 140 20% 85%;
+    --fairway: 130 30% 75%;
+    --green: 140 40% 65%;
+    --sand: 45 70% 80%;
+    --water: 200 80% 70%;
+    
+    /* Gradients */
+    --gradient-fairway: linear-gradient(135deg, hsl(130 30% 75%), hsl(140 35% 70%));
+    --gradient-green: linear-gradient(135deg, hsl(140 40% 65%), hsl(145 45% 55%));
+    --gradient-alpine: linear-gradient(180deg, hsl(120 20% 98%), hsl(130 15% 95%));
+    
+    /* Shadows */
+    --shadow-card: 0 4px 20px hsl(140 20% 80% / 0.3);
+    --shadow-hover: 0 8px 30px hsl(140 30% 70% / 0.4);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 

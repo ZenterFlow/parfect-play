@@ -61,6 +61,22 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Golf course specific colors
+				golf: {
+					tee: 'hsl(var(--tee))',
+					fairway: 'hsl(var(--fairway))',
+					green: 'hsl(var(--green))',
+					sand: 'hsl(var(--sand))',
+					water: 'hsl(var(--water))'
+				},
+				success: {
+					DEFAULT: 'hsl(var(--success))',
+					foreground: 'hsl(var(--success-foreground))'
+				},
+				warning: {
+					DEFAULT: 'hsl(var(--warning))',
+					foreground: 'hsl(var(--warning-foreground))'
 				}
 			},
 			borderRadius: {
